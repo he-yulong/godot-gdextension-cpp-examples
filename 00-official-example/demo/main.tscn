@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dvgdgi3jrhrvt"]
+
+[ext_resource type="Texture2D" uid="uid://ch0aljsxfwrd6" path="res://icon.svg" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://ckxm64mv5btu3" path="res://gd_example.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=266414126]
+
+[node name="GDExample" type="GDExample" parent="." unique_id=1277812094]
+amplitude = 50.0
+texture = ExtResource("1_ig7tw")
+centered = false
+script = ExtResource("2_0xm2m")
+
+[connection signal="position_changed" from="GDExample" to="GDExample" method="_on_position_changed"]

@@ -1,0 +1,16 @@
+# Compiled object files (intermediate build artifacts)
+**.obj
+# SCons build database — local build tool state, not source code
+.sconsign.dblite
+
+# Platform-specific compiled extension binaries (runtime outputs)
+demo/bin/*.dll
+demo/bin/*.so
+demo/bin/*.dylib
+
+# Linker-generated intermediate and import files (not needed after build)
+demo/bin/*.lib
+demo/bin/*.exp
+
+# macOS framework bundles (compiled runtime packages)
+demo/bin/*.framework/
